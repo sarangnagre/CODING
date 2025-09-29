@@ -1,1 +1,20 @@
-1
+ #include <stdio.h>
+
+int main() {
+    int input_value;
+    printf("welcome to Farming App.\n");
+    printf("Follow Instructions to Use motor.\n");
+    printf("Please press 0(to start)or 1(to stop):");
+    scanf("%d", &input_value);
+
+    if (input_value == 0) {
+        printf("status:Motor ON.\n");
+    } else if (input_value == 1) {
+        printf("status:Motor OFF.\n");
+    } else {
+        printf("status: INVALID INPUT.\nPlease Enter 0(to start)or1(to stop)\n");
+    }
+
+    return 0;
+}  
+
